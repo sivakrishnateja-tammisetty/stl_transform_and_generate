@@ -1,5 +1,6 @@
-*std::generate, std::generate_n and std::transform functions provide a very powerful tool for on-the-fly data
-manipulation. 
+*std::generate, std::generate_n and std::transform functions provide a very powerful tool for on-the-fly data manipulation. 
+*TRANSFORM :std::transform is a C++ Standard Template Library (STL) algorithm that performs an operation on each element of a given range (specified by two iterators) and stores the result in another range or container.
+*
 
 
 *For example, having a vector:
