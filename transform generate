@@ -1,0 +1,23 @@
+*std::generate, std::generate_n and std::transform functions provide a very powerful tool for on-the-fly data
+manipulation. 
+
+
+*For example, having a vector:
+
+std::vector<int> v = {1,2,3,4,8};
+std::transform(v.begin(), v.end(), std::ostream_iterator<int>(std::cout, " "),
+[](int val) {
+ return val * val;
+});
+
+o/p: 1 4 9 16 64 
+
+
+
+
+
+Printing N space-delimited random numbers:
+const int N = 4;
+std::generate_n(std::ostream_iterator<int>(std::cout, " "), N, std::rand);
+
+o/p: 765 098 0635 0975
